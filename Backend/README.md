@@ -5,7 +5,7 @@ Build an agent that sells products to prospects via email.
 ## Requirements
 
 - Python 3.11 or higher
-- [AgentMail API key](https://agentmail.io)
+- [AgentMail API key](httaps://agentmail.io)
 - [OpenAI API key](https://platform.openai.com)
 - [Ngrok account](https://ngrok.com) (for receiving webhooks)
 
