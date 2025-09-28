@@ -1,29 +1,33 @@
-# 📧 Smart Email Responder
+# Smart Email Responder
 
-A Python-based application that **fetches emails**, generates smart responses using the **Google Gemini API**, and **sends replies automatically** — all wrapped in a simple **Tkinter GUI**.
+Build an agent that **fetches emails, generates smart responses, and schedules meetings** — powered by **Google Gemini/OpenAI APIs** with a simple Tkinter GUI.
 
 ---
 
-## ✨ Features
-- Fetches incoming emails (via Gmail API or IMAP/SMTP setup)  
-- Uses **Open AI** to generate responses and schedule meetings 
-- Easy-to-use **GUI** with:
+## Requirements
+
+- Python 3.11 or higher  
+- [Google Cloud credentials](https://console.cloud.google.com) for Gmail/Calendar APIs  
+- [OpenAI API key](https://platform.openai.com)  
+- [Ngrok account](https://ngrok.com) (optional, for receiving webhooks or remote testing)  
+
+---
+
+## Features
+
+- Fetches incoming emails via Gmail API or IMAP/SMTP  
+- Generates smart responses using OpenAI/Gemini  
+- Schedules meetings directly on Google Calendar  
+- Tkinter GUI with:  
   - Dropdowns for formality & thinking depth  
   - Real-time log output  
-  - Flashing **alert indicator** for important messages  
+  - Flashing alert indicator for important messages  
 
 ---
 
-## 🖥️ GUI Preview
-- **Google Calendar** – Links with Google Calendar to schedule and remove events 
-- **Formality Selector** – Thinks before each response with specifications on how to reply to emails  
+## Install
 
-
----
-
-## 🔧 Installation
-
-1. **Clone this repo**
-   ```bash
-   git clone https://github.com/Snazzy11/AI-Email-Scheduler.git
-   
+```bash
+python -m venv .venv
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+pip install -r requirements.txt
