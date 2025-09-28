@@ -49,3 +49,4 @@ def send_basic_message(client, chat, message: str) -> str:
     :return: Gemini's response
     """
     return chat.send_message(message)
+
